@@ -795,14 +795,15 @@ section .container {
 .contact .info-box .social-links a {
     font-size: 18px;
     display: inline-block;
-    color: var(--background);
+    color: var(--primary-color);
     line-height: 1;
     margin-right: 12px;
     transition: 0.3s;
 }
 
 .contact .info-box .social-links a:hover {
-    color: #18d26e;
+    background: var(--on-background);
+    color: var(--background);
 }
 
 .contact .php-email-form {
@@ -811,7 +812,7 @@ section .container {
 }
 
 
-.
+
 
 
 
@@ -841,36 +842,39 @@ section .container {
     font-size: 14px;
     border: 0;
     transition: 0.3s;
-    background-color: var(--secondary-color);
+    background: var(--on-background);
+    color: var(--background);
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-    background-color: var(--secondary-color);
+   /* background-color: var(--secondary-color);*/
+    background: var(--on-background);
+    color: var(--background);
 }
 
 .contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
     color: var(--background);
-    opacity: 1;
+
 }
 
 .contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
     color: var(--background);
-    opacity: 1;
+
 }
 
 .contact .php-email-form input:-ms-input-placeholder, .contact .php-email-form textarea:-ms-input-placeholder {
     color: var(--background);
-    opacity: 1;
+
 }
 
 .contact .php-email-form input::-ms-input-placeholder, .contact .php-email-form textarea::-ms-input-placeholder {
     color: var(--background);
-    opacity: 1;
+
 }
 
 .contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
     color:var(--background);
-    opacity: 1;
+
 }
 
 .contact .php-email-form input {
@@ -891,7 +895,8 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #15bb62;
+    background: var(--on-background);
+    color: var(--background);
 }
 @-webkit-keyframes animate-loading {
     0% {
