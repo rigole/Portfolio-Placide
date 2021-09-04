@@ -232,4 +232,5 @@ $(document).ready(function() {
         }
     }
     _interval_val=setInterval(Typing, 100);
+
 });
