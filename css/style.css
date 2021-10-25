@@ -257,7 +257,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     color: #fff;
     visibility: hidden;
-    width: 0px;
     transition: all 0.3s ease-in-out 0s;
 }
 
@@ -443,7 +442,6 @@ section .container {
 }
 
 .section-title p {
-    margin: 0;
     margin: -15px 0 15px 0;
     font-size: 36px;
     font-weight: 700;
@@ -612,7 +610,7 @@ section .container {
 }
 
 .portfolio #portfolio-flters {
-    padding: 0;
+
     margin: 0 auto 15px auto;
     list-style: none;
     text-align: center;
@@ -711,12 +709,12 @@ section .container {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
     font-size: 20px;
-    color: var(--background);
+    color: #ffff;
     font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-    color: var(--background);
+    color: #ffff;
     font-size: 14px;
     text-transform: uppercase;
     padding: 0;
@@ -963,7 +961,7 @@ section .container {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    /*background-color: rgba(255, 255, 255, 0.3) !important;*/
+    background-color: rgb(150, 65, 255) !important;
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
