@@ -54,6 +54,7 @@ if (currentTheme){
         darkMode();
     }
 }
+
 particlesJS('particles-js',
 
     {
@@ -176,6 +177,6 @@ particlesJS('particles-js',
 );
 //Particles animations
 
-particlesJS.load('particles-js', 'js/particles.json', function () {
+/*particlesJS.load('particles-js', 'js/particles.json', function () {
     console.log('callback - particles.js config loaded');
-})
+})*/

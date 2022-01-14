@@ -32,7 +32,7 @@
 </head>
 
 <body>
-<div id="particles-js"></div>
+
 <!-- ======= Header ======= -->
 <header id="header" class="header-tops">
     <div class="container">
@@ -77,6 +77,7 @@
 
     </div>
 </header><!-- End Header -->
+<div id="particles-js"></div>
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
 
@@ -568,9 +569,32 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js" integrity="sha512-zBTnX97k269iewUwROiWwO82A6uXO4lcjq0Z4xnvO+qAblC/RMQRUu8fQVKtSFhPNKD5Xzh9PMoZG7+LnmH1Hg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Template Main JS File -->
 
+<script src="js/particles.js"></script>
 <script src="js/script.js"></script>
 <script src="js/main.js"></script>
-<script src="js/particles.js"></script>
+
+<script src="js/lib/stats.js"></script>
+<script>
+    let count_particles, stats, update;
+    stats = new Stats()
+    stats.setMode()
+    stats.domElement.style.position = 'absolute'
+    stats.domElement.style.left = '0px'
+    stats.domElement.style.top = '0px'
+    document.body.appendChild(stats.domElement)
+    count_particles = document.querySelector('.js-count-particles')
+    update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+
+
+</script>
 
 
 </body>
