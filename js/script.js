@@ -175,8 +175,23 @@ particlesJS('particles-js',
     }
 
 );
-//Particles animations
 
-/*particlesJS.load('particles-js', 'js/particles.json', function () {
-    console.log('callback - particles.js config loaded');
-})*/
+//Mouse
+let mouseCursor = document.querySelector(".cursor");
+let navigationMenu = document.querySelectorAll(".nav-menu a");
+
+window.addEventListener('mousemove', cursorMove);
+
+function cursorMove(e) {
+    mouseCursor.style.top = e.pageY + "px";
+    mouseCursor.style.left = e.pageX + "px"
+}
+
+navigationMenu.forEach(link => {
+    link.addEventListener("mouseleave", () => {
+        mouseCursor.classList.remove("link-grow")
+    });
+    link.addEventListener("mouseover", ()=> {
+        mouseCursor.classList.add("link-grow");
+    });
+})

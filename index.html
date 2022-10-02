@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-
+    <link rel="icon" href="assets/img/favicon/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -31,11 +31,19 @@
 
 </head>
 
-<body>
-<div id="particles-js"></div>
-<!-- <div id="particles-js"></div> ======= Header ======= -->
-<header id="header" class="header-tops">
+<body onload="loadingScreen()">
+    <div class="loading-space">
+        <span class="loader">Loading...</span>
+        <span class="load_animation_1"></span>
+        <span class="load_animation_2"></span>
+    </div>
+    <div id="particles-js"></div>
 
+
+
+    <!-- <div id="particles-js"></div> ======= Header ======= -->
+    <header id="header" class="header-tops">
+    <div class="cursor"></div>
     <div class="container">
 
 
@@ -44,7 +52,7 @@
         <h2 >I'm a passionate <span id="text"> <span id="cursor"></span> </span></h2>
 
         <nav id="nav" class="nav-menu d-none d-lg-block">
-            <ul>
+            <ul class="nav-links">
                 <li class="active"><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
@@ -76,8 +84,8 @@
     </div>
 </header><!-- End Header -->
 
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
 
     <!-- ======= About Me ======= -->
     <div class="about-me container">
@@ -309,8 +317,8 @@
 
 </section><!-- End About Section -->
 
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="resume">
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
     <div class="container">
 
         <div class="section-title">
@@ -381,8 +389,8 @@
 </section><!-- End Resume Section -->
 
 
-<!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
     <div class="container">
 
         <div class="section-title">
@@ -481,8 +489,8 @@
      </div>
  </section><!-- End Portfolio Section -->
 
-<!-- ======= Contact Section ======= -->
-<section id="contact" class="contact">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
     <div class="container">
 
         <div class="section-title">
@@ -552,46 +560,60 @@
 </section><!-- End Contact Section -->
 
 
-<!-- Vendor JS Files -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js" integrity="sha512-zBTnX97k269iewUwROiWwO82A6uXO4lcjq0Z4xnvO+qAblC/RMQRUu8fQVKtSFhPNKD5Xzh9PMoZG7+LnmH1Hg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
-<script src="https://raw.githubusercontent.com/i18next/jquery-i18next/master/jquery-i18next.min.js"></script>
-<!-- Template Main JS File -->
+    <!-- Vendor JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js" integrity="sha512-zBTnX97k269iewUwROiWwO82A6uXO4lcjq0Z4xnvO+qAblC/RMQRUu8fQVKtSFhPNKD5Xzh9PMoZG7+LnmH1Hg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
+    <script src="https://raw.githubusercontent.com/i18next/jquery-i18next/master/jquery-i18next.min.js"></script>
+    <!-- Template Main JS File -->
 
 
-<script src="js/script.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 
-<script src="js/lib/stats.js"></script>
-<script>
-    let count_particles, stats, update;
-    stats = new Stats()
-    stats.setMode()
-    stats.domElement.style.position = 'absolute'
-    stats.domElement.style.left = '0px'
-    stats.domElement.style.top = '0px'
-    //document.body.appendChild(stats.domElement)
-    count_particles = document.querySelector('.js-count-particles')
-    update = function() {
-        stats.begin();
-        stats.end();
-        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    <script src="js/lib/stats.js"></script>
+    <script>
+        const  load = document.querySelector(".loading-space");
+
+        function loadingScreen() {
+            load.style.display = "none";
+
         }
+
+
+
+
+
+
+
+
+        let count_particles, stats, update;
+        stats = new Stats()
+        stats.setMode()
+        stats.domElement.style.position = 'absolute'
+        stats.domElement.style.left = '0px'
+        stats.domElement.style.top = '0px'
+        //document.body.appendChild(stats.domElement)
+        count_particles = document.querySelector('.js-count-particles')
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
         requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
 
 
-</script>
+    </script>
 
 
 </body>
