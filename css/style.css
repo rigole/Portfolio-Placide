@@ -534,29 +534,38 @@ section .container {
 #
 
 --------------------------------------------------------------*/
+#about{
+    cursor: none;
+}
+
 .about-me .content h3 {
     font-weight: 700;
     font-size: 26px;
     color: var(--on-background);
+    ;
 }
 
 .about-me .content ul {
     list-style: none;
     padding: 0;
+
 }
 
 .about-me .content ul li {
     padding-bottom: 10px;
+
 }
 
 .about-me .content ul i {
     font-size: 20px;
     padding-right: 2px;
     color: var(--on-background);
+    cursor: none;
 }
 
 .about-me .content p:last-child {
     margin-bottom: 0;
+    cursor: none;
 }
 
 /*--------------------------------------------------------------
@@ -617,6 +626,7 @@ section .container {
     line-height: 1;
     font-size: 16px;
     color: var(--background);
+    visibility: hidden;
 
 }
 
@@ -1103,5 +1113,23 @@ section .container {
 
 .link-grow{
     transform: scale(2);
+    background: black;
+}
+
+.cursor-about{
+    height:3rem;
+    width: 3rem;
+    border: 2px solid #6c63ff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3ms ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100% ;
+}
+
+.link-grow-about{
+    transform: scale(4);
     background: black;
 }

@@ -176,9 +176,12 @@ particlesJS('particles-js',
 
 );
 
-//Mouse
+//Mouse-header
 let mouseCursor = document.querySelector(".cursor");
 let navigationMenu = document.querySelectorAll(".nav-menu a");
+
+
+
 
 window.addEventListener('mousemove', cursorMove);
 
@@ -193,5 +196,56 @@ navigationMenu.forEach(link => {
     });
     link.addEventListener("mouseover", ()=> {
         mouseCursor.classList.add("link-grow");
+    });
+})
+
+//Mouse About
+
+let aboutCursor = document.querySelector(".cursor-about");
+let skillsInterestList = document.querySelectorAll(".interests .icon-box");
+let skillsInterestListText = document.querySelectorAll(".interests .icon-box h3");
+
+
+window.addEventListener('mousemove', cursorAboutMove);
+
+function cursorAboutMove(e) {
+    aboutCursor.style.top = e.pageY + "px";
+    aboutCursor.style.left = e.pageX + "px";
+}
+
+
+/*function setVisible(){
+    //element.style.visibility="visible";
+    skillsInterestListText.forEach(test => {
+        test.style.visibility= "visible";
+    })
+
+}
+
+skillsInterestList.forEach(skillTest => {
+    skillTest.addEventListener("mouseover", setVisible);
+        skillTest.style.visibility= "visible";
+    });
+})*/
+
+for (let i = 0; i < skillsInterestList.length; i++) {
+    for (let j = 0; j < skillsInterestListText.length; j++) {
+        skillsInterestList[i].addEventListener("mouseover", () => {
+            skillsInterestListText[i].style.visibility = "visible";
+        });
+        skillsInterestList[i].addEventListener("mouseleave", () => {
+            skillsInterestListText[i].style.visibility = "hidden";
+        });
+    }
+}
+
+skillsInterestList.forEach(skill => {
+
+    skill.addEventListener("mouseleave", () => {
+        aboutCursor.classList.remove("link-grow-about");
+
+    });
+    skill.addEventListener("mouseover", ()=> {
+        aboutCursor.classList.add("link-grow-about");
     });
 })
