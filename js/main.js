@@ -166,10 +166,10 @@ $(document).ready(function() {
 
     // List of title
     const _content = [
-        "FullStack Web Developper",
-        "Software Engineer",
+        "Web Developer",
+        "Software Developer",
         "Data Scientist",
-        "Machine Learning Engineer"
+        "Machine Learning Enthusiast"
     ]
 
     // Current sentence being processed

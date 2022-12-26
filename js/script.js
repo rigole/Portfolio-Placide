@@ -249,3 +249,5 @@ skillsInterestList.forEach(skill => {
         aboutCursor.classList.add("link-grow-about");
     });
 })
+
+
