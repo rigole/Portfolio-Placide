@@ -175,14 +175,14 @@ particlesJS('particles-js',
     }
 
 );
-
+/*
 //Mouse-header
 let mouseCursor = document.querySelector(".cursor");
 let navigationMenu = document.querySelectorAll(".nav-menu a");
 
 
-
-
+*/
+/*
 window.addEventListener('mousemove', cursorMove);
 
 function cursorMove(e) {
@@ -198,7 +198,7 @@ navigationMenu.forEach(link => {
         mouseCursor.classList.add("link-grow");
     });
 })
-
+*/
 //Mouse About
 /*
 let aboutCursor = document.querySelector(".cursor-about");
