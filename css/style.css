@@ -534,9 +534,6 @@ section .container {
 #
 
 --------------------------------------------------------------*/
-#about{
-    cursor: none;
-}
 
 .about-me .content h3 {
     font-weight: 700;
@@ -560,12 +557,12 @@ section .container {
     font-size: 20px;
     padding-right: 2px;
     color: var(--on-background);
-    cursor: none;
+    
 }
 
 .about-me .content p:last-child {
     margin-bottom: 0;
-    cursor: none;
+    
 }
 
 /*--------------------------------------------------------------
@@ -626,7 +623,7 @@ section .container {
     line-height: 1;
     font-size: 16px;
     color: var(--background);
-    visibility: hidden;
+  
 
 }
 
