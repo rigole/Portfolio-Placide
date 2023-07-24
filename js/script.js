@@ -200,7 +200,7 @@ navigationMenu.forEach(link => {
 })
 
 //Mouse About
-
+/*
 let aboutCursor = document.querySelector(".cursor-about");
 let skillsInterestList = document.querySelectorAll(".interests .icon-box");
 let skillsInterestListText = document.querySelectorAll(".interests .icon-box h3");
@@ -228,6 +228,7 @@ skillsInterestList.forEach(skillTest => {
     });
 })*/
 
+/*
 for (let i = 0; i < skillsInterestList.length; i++) {
     for (let j = 0; j < skillsInterestListText.length; j++) {
         skillsInterestList[i].addEventListener("mouseover", () => {
@@ -251,3 +252,4 @@ skillsInterestList.forEach(skill => {
 })
 
 
+*/
